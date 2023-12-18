@@ -1,0 +1,102 @@
+:root {
+	--black: #2A2B2A;
+	--red: #F45B69;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	color: var(--black);
+}
+
+/* whole screen */
+#window {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+/* right side map */
+#map-panel {
+	width: 70%;
+}
+  
+/* left side text */
+#text-panel {
+	width: 30%;
+	text-align: center;
+	overflow-y: scroll;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+/* contains the search bar and dropdown */
+#dropdown-menu {
+	width: 76%;
+	font-size: 20px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#searchBar {
+	width: 99%;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid var(--black);
+	border-radius: 5px;
+}
+
+#dropdown-list {
+	display: none;
+	width: 76%;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid var(--black);
+	border-style: none solid solid solid;
+	border-radius: 5px;
+	margin: auto;
+	position: absolute;
+	background-color: white;
+	z-index: 1;
+}
+
+.dropdown-item {
+	padding: 2px 0px;
+}
+
+.dropdown-item:hover {
+	background-color: var(--red);
+	color: white;
+}
+
+/* little cards of info for each prof */
+#prof-info {
+	width: 77%;
+	margin: auto;
+	position: relative;
+}
+
+.prof-info-box {
+	width: 90%;
+	border: 1px solid var(--black);
+	border-radius: 5px;
+	text-align: left;
+	padding-left: 10px;
+	line-height: 10px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.prof-info-box:hover {
+	background-color: var(--red);
+	color: white;
+	border-color: white;
+}
+
+#prof-info-box-selected {
+	background-color: var(--red);
+	color: white;
+	border-color: white;
+}
