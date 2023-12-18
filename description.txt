@@ -1,0 +1,31 @@
+FindMyProfessor
+CSC 552 002 Grad Project
+Fall 2023
+Ethan Hebert
+
+URL
+https://findmyprofessor-xj6zjgjpyq-uc.a.run.app/
+
+DESCRIPTION
+This is a web app which allows a user to find Louisiana Tech
+professors' offices as well as other information such as department
+and email. The user can search a professor's name in the search bar
+and that professor's office will be pinned on the Google Map in the window.
+
+CREATION
+The web app was constructed using an HTML/CSS/JS framework. Within the HTML
+file is connection to the Google Maps API, and the API is utilized within
+the JS file. This is where the actual data parsing and placement of office
+markers occurs. On the Google Cloud Console, I used the Google Maps Styles
+feature to create a custom map style that only shows essential labels
+to the app with a custom LATech color scheme consistent with the webpage.
+The app is hosted on an nginx server. Within the nginx server
+is a configuration file which enables the proper port settings to run on 
+Google Cloud. I then created a Dockerfile to containerize the app and
+include directions to install the nginx server on wherever the app is
+hosted. I then uploaded this container to Google Cloud Run which handles
+serving the app on the web. A URL was produced by Cloud Run, and my app
+was live!
+
+TIME ESTIMATE
+30 hours
